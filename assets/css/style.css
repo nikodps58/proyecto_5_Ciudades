@@ -232,6 +232,6 @@ footer p{
 }
 
 #boton:hover{
-    transition: 5s;
-    color: var(--color0)!important;
+    transition: 0.5s;
+    color: var(--color1)!important;
 }
