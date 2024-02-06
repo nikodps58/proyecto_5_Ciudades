@@ -11,6 +11,7 @@
     --color0:white;
     --color1:rgb(102,102,209);
     --color2:rgb(156,156,194);
+    --color2b:rgba(156,156,194,0.4);
     --color3:rgb(43,43,43);
     --anchoMaximo:1800px
 }
@@ -72,16 +73,13 @@ h1{
     font-size: 1.2rem;
 }
 
-#nav_inf a:visited{
-    color: inherit;
-}
 
 #nav_inf a:hover{
     color: var(--color2);
 }
 
 @media only screen and (min-width:900px){
-    a{
+    #nav_inf a{
         background-color: var(--color0);
         color:var(--color1);
         font-size: 1.5rem;
@@ -170,10 +168,17 @@ p{
 }
 
 /* seccio contacto */
-
+#sect_form{
+    width: 100%;
+    background-image: url("../img/mundo2.png");
+    background-attachment: fixed;
+    padding: 2rem 0;    
+}
 form{
     width: 500px;
-    background-color: var(--color2);
+    background-color: var(--color2b);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -185,7 +190,7 @@ form{
 @media only screen and (min-width:900px){
     form{
         border-radius: 1rem;
-    }
+}
 }
 
 
@@ -235,3 +240,40 @@ footer p{
     transition: 0.5s;
     color: var(--color1)!important;
 }
+
+.art_ciudades{
+margin: 2rem;
+}
+
+
+
+/* estilos de hoja seundaria */
+
+
+@media only screen and (max-width:900px){
+    .img_ciudades{
+        max-width: 700px;
+    }
+
+    p{
+        font-size: 0.85rem;
+        letter-spacing: 0.4px;
+        line-height: 1.4rem ;
+        /* font-size: 1.1rem;
+        letter-spacing: 0.5px;
+        line-height: 1.6rem; */
+    }
+   
+                    
+}
+
+@media only screen and (max-width:600px){
+    .img_ciudades{
+        max-width: 500px;
+        font-size: 0.75rem;
+        letter-spacing: 0.3px;
+        line-height: 1.0rem ;
+    }
+                    
+}
+
