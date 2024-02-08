@@ -7,51 +7,27 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <nav>
-        <h1>TRES CIUDADES</h1>
+
+<?php
+        include "./php/nav.php"
+    ?>
         
-        <div id="nav_inf">
-            <ul>
-                <li>
-                    <a href="./index.htm">INICIO</a>
-                </li>
-                <li>
-                    <a href="./paris.html">PARIS</a>
-                </li>
-                <li>
-                    <a href="#">LONDRES</a>
-                </li>
-                <li>
-                    <a href="#">MADRID</a>
-                </li>
-
-            </ul>
-        </div>
-
-    </nav>
-    <header>
-
-    </header>
     <main>
         
         <section>
-            <h2>Conoce los mejores destinos</h2>
-            <article>
-                <h3 class="oculto">20 años de experiencia en viajes</h3>
+            <h2>LONDRES</h2>
+            <article  class="art_ciudades">
+                <h3>La ciudad de la niebla</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eaque quasi provident dolore reiciendis omnis quidem culpa quod commodi possimus, sapiente vero dolorem repellendus beatae architecto vel eum mollitia aperiam, aliquid a sunt. Facere quas ab ratione atque exercitationem sed molestiae, enim, quisquam iusto, dolor architecto facilis labore modi dolorem!</p>
-                <div id="destinos">
-                    <div class="destino">
-                        <img src="./assets/img/londres.jpg" alt="">
-                    </div>
-                    <div class="destino">
-                        <img src="./assets/img/madrid.jpg" alt="">
-                    </div>
-                    <div class="destino">
-                        <img src="./assets/img/paris.jpg" alt="">
-                    </div>
-                </div>
-            </article>    
+                <img class="img_ciudades" src="./assets/img/londres01.jpg" alt="">
+           </article>    
+           <article  class="art_ciudades">
+                <h3>La ciudad de las finanzas</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eaque quasi provident dolore reiciendis omnis quidem culpa quod commodi possimus, sapiente vero dolorem repellendus beatae architecto vel eum mollitia aperiam, aliquid a sunt. Facere quas ab ratione atque exercitationem sed molestiae, enim, quisquam iusto, dolor architecto facilis labore modi dolorem!</p>
+                <img class="img_ciudades" src="./assets/img/londres02.jpg" alt="">
+       </article>    
         </section>
+
         <section id="sect_form">
             <h2 class="oculto">Contacta con nostros</h2>
             <article>
@@ -66,6 +42,7 @@
                 </form>
             </article>
         </section>
+      
     </main>
     <footer>
         <p>Desarrollado por Niko</p>
